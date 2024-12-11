@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tornadoes and Natural Disasters</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #f8f8f8, #cccccc, #333333);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #333;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo a {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+
+        /* Navigation links styling */
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        /* Hover effects */
+        .nav-links a:hover {
+            color: #ff6347;
+            transform: translateY(-5px);
+        }
+
+        /* Dropdown styling */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            list-style: none;
+            padding: 0.5rem;
+            display: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu li {
+            padding: 0.5rem;
+        }
+
+        /* Main content styling */
+        header {
+            background-color: #444;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        h1 {
+            color: white;
+            background-color: #444;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #444;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #888;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .image-wrapper {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-wrapper:hover {
+            transform: scale(1.05);
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #444;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-top: 4px solid #333;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .image-gallery {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="logo"><a href="#">Natural Disasters</a></li>
+                <li class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">Contact</a>
+                    <div class="dropdown">
+                        <a href="#">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Mission</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Natural Disasters: Tornadoes</h1>
+        <section>
+            <p>Tornadoes are among the most violent storms on Earth. With their ferocious winds and unpredictable paths, they have the power to destroy entire communities in seconds. Tornadoes form from severe thunderstorms when warm, moist air meets cool, dry air, creating a rotating column of air that extends from the cloud to the ground. The damage they cause is often devastating, with wind speeds in the strongest tornadoes exceeding 200 miles per hour.</p>
+        </section>
+
+        <section>
+            <h2>The Dangers of Tornadoes</h2>
+            <p>The dangers posed by tornadoes include not only the intense winds but also the debris they hurl at incredible speeds. This can turn ordinary objects into deadly projectiles. Tornadoes can destroy homes, uproot trees, and overturn vehicles. Survivors often face long-term challenges, including displacement and emotional trauma.</p>
+        </section>
+
+        <section>
+            <h2>Rebuilding After Disaster</h2>
+            <p>After a tornado strikes, the process of rebuilding can take months or even years. Communities must come together to clear debris, rebuild homes and businesses, and restore vital services. One of the most notable examples of this resilience is the town of La Plata, Maryland. In April 2002, an EF4 tornado ripped through La Plata, leaving a path of destruction. The tornado, with winds estimated at 260 mph, caused extensive damage to homes, schools, and businesses.</p>
+            <p>Despite the devastation, the community rallied together to rebuild. Today, La Plata stands as a testament to the strength and determination of its residents, with modernized infrastructure and a renewed sense of community spirit.</p>
+        </section>
+
+        <section>
+            <h2>Notable Tornadoes in the Past 50 Years</h2>
+            <ul>
+                <li><strong>El Reno Tornado (2013):</strong> The largest tornado ever recorded, spanning 2.6 miles wide.</li>
+                <li><strong>Joplin Tornado (2011):</strong> One of the deadliest in recent history, claiming 158 lives in Missouri.</li>
+                <li><strong>La Plata Tornado (2002):</strong> An EF4 tornado that devastated the town of La Plata, Maryland.</li>
+            </ul>
+        </section>
+
+        <div class="image-gallery">
+            <div class="image-wrapper">
+                <img src="Assets/images/image1.jpeg" alt="Massive wedge tornado">
+                <p>Image 1: Wedge Tornado</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="Assets/images/image2.jpeg" alt="Classic landscape">
+                <p>Image 2: Tornado in a landscape</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="Assets/images/image3.jpeg" alt="Close-up tornado funnel">
+                <p>Image 3: Tornado Funnel</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+       
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
